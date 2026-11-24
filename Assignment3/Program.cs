@@ -21,8 +21,16 @@
             #endregion
 
             #region Q4
-            string title = "Clean Code";
-            PrintBookTitle(title);
+            //string title = "Clean Code";
+            //PrintBookTitle(title);
+            #endregion
+
+            #region Q5
+            int pages = 400;
+            AddBonusPages(pages);
+            Console.WriteLine($"page after add : {pages}");
+            // نفس الرقم بسبب كدا عملت متغير جديد مش بيشوار علي نفس المكان
+            // ممكن اعمل return استقبل المتغير الجديد
             #endregion
         }
 
@@ -34,9 +42,16 @@
         #endregion
 
         #region Q4
-        static void PrintBookTitle(string title)
+        //static void PrintBookTitle(string title)
+        //{
+        //    Console.WriteLine("Book title: " + title);
+        //}
+        #endregion
+
+        #region Q5
+        static void AddBonusPages(int pages)
         {
-            Console.WriteLine("Book title: " + title);
+            pages = pages + 50;
         }
         #endregion
     }
