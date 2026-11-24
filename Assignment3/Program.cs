@@ -49,9 +49,16 @@
             #endregion
 
             #region Q8
-            double []prices=null;
-            ReplaceArray(ref prices);
-            Console.WriteLine($"the lenght of array prices : {prices.Length}");
+            //double []prices=null;
+            //ReplaceArray(ref prices);
+            //Console.WriteLine($"the lenght of array prices : {prices.Length}");
+            #endregion
+
+            #region Q9
+            string title = "Clean Code";
+            double price=0;
+            TryGetPrice(title,out price);
+            Console.WriteLine($"the price of {title} : {price}");
             #endregion
         }
 
@@ -91,9 +98,26 @@
         #endregion
 
         #region Q8
-        static void ReplaceArray(ref double[] prices)
+        //static void ReplaceArray(ref double[] prices)
+        //{
+        //    prices = new double []{10.0, 12.5, 15.0};
+        //}
+        #endregion
+
+        #region Q9
+        static bool TryGetPrice(string title, out double price)
         {
-            prices = new double []{10.0, 12.5, 15.0};
+            if(title== "Clean Code")
+            {
+                price = 25.5;
+                return true;
+            }
+            else
+            {
+                price = 0;
+                return false;
+            }
+           
         }
         #endregion
     }
