@@ -26,11 +26,19 @@
             #endregion
 
             #region Q5
-            int pages = 400;
-            AddBonusPages(pages);
-            Console.WriteLine($"page after add : {pages}");
+            //int pages = 400;
+            //AddBonusPages(pages);
+            //Console.WriteLine($"page after add : {pages}");
             // نفس الرقم بسبب كدا عملت متغير جديد مش بيشوار علي نفس المكان
             // ممكن اعمل return استقبل المتغير الجديد
+            #endregion
+
+            #region Q6
+            double[] prices = { 25.5, 40.0 };
+            ApplyDiscount(prices);
+            Console.WriteLine($"price after : {prices[0]}");
+            //هنا طرح عشان array بتكون بتشاور علي مكان في ال heep
+            // يعتبر بعنله مكان المتغير 
             #endregion
         }
 
@@ -49,9 +57,16 @@
         #endregion
 
         #region Q5
-        static void AddBonusPages(int pages)
+        //static void AddBonusPages(int pages)
+        //{
+        //    pages = pages + 50;
+        //}
+        #endregion
+
+        #region Q6
+        static void ApplyDiscount(double[] prices)
         {
-            pages = pages + 50;
+            prices[0] = prices[0] - 5;
         }
         #endregion
     }
