@@ -42,10 +42,16 @@
             #endregion
 
             #region Q7
-            int pages = 400;
-            AddBonusPagesByRef(ref pages);
-            Console.WriteLine($"page after add : {pages}");
+            //int pages = 400;
+            //AddBonusPagesByRef(ref pages);
+            //Console.WriteLine($"page after add : {pages}");
             // هنا التغير سمع عشان بعتله مكان المتغير 
+            #endregion
+
+            #region Q8
+            double []prices=null;
+            ReplaceArray(ref prices);
+            Console.WriteLine($"the lenght of array prices : {prices.Length}");
             #endregion
         }
 
@@ -78,9 +84,16 @@
         #endregion
 
         #region Q7
-        static void AddBonusPagesByRef(ref int pages)
+        //static void AddBonusPagesByRef(ref int pages)
+        //{
+        //     pages = pages + 50;
+        //}
+        #endregion
+
+        #region Q8
+        static void ReplaceArray(ref double[] prices)
         {
-             pages = pages + 50;
+            prices = new double []{10.0, 12.5, 15.0};
         }
         #endregion
     }
