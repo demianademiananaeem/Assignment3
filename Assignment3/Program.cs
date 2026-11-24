@@ -55,10 +55,15 @@
             #endregion
 
             #region Q9
-            string title = "Clean Code";
-            double price=0;
-            TryGetPrice(title,out price);
-            Console.WriteLine($"the price of {title} : {price}");
+            //string title = "Clean Code";
+            //double price=0;
+            //TryGetPrice(title,out price);
+            //Console.WriteLine($"the price of {title} : {price}");
+            #endregion
+
+            #region Q10
+            PrintBookInfo("C# Book");
+            PrintBookInfo("Java Book", 200);
             #endregion
         }
 
@@ -105,19 +110,26 @@
         #endregion
 
         #region Q9
-        static bool TryGetPrice(string title, out double price)
+        //static bool TryGetPrice(string title, out double price)
+        //{
+        //    if(title== "Clean Code")
+        //    {
+        //        price = 25.5;
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //        price = 0;
+        //        return false;
+        //    }
+
+        //}
+        #endregion
+
+        #region Q10
+        static void PrintBookInfo(string title, int pages = 300)
         {
-            if(title== "Clean Code")
-            {
-                price = 25.5;
-                return true;
-            }
-            else
-            {
-                price = 0;
-                return false;
-            }
-           
+            Console.WriteLine($"Book title: {title}, pages: {pages}");
         }
         #endregion
     }
