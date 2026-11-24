@@ -17,14 +17,26 @@
             #endregion
 
             #region Q3
-            PrintWelcomeMessage();
+            // PrintWelcomeMessage();
+            #endregion
+
+            #region Q4
+            string title = "Clean Code";
+            PrintBookTitle(title);
             #endregion
         }
 
         #region Q3
-        static void PrintWelcomeMessage()
-        { 
-            Console.WriteLine("Welcome to the Library!");
+        //static void PrintWelcomeMessage()
+        //{ 
+        //    Console.WriteLine("Welcome to the Library!");
+        //}
+        #endregion
+
+        #region Q4
+        static void PrintBookTitle(string title)
+        {
+            Console.WriteLine("Book title: " + title);
         }
         #endregion
     }
