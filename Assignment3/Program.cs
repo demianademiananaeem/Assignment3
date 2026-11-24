@@ -12,9 +12,20 @@
             #endregion
 
             #region Q2
-            int[,] shelfCopies = new int[2,2] { { 3, 5 }, { 1, 4 } };
-            Console.WriteLine($"number of copies on shelf 1, slot 0 : {shelfCopies[1,0]}");
+            //int[,] shelfCopies = new int[2,2] { { 3, 5 }, { 1, 4 } };
+            //Console.WriteLine($"number of copies on shelf 1, slot 0 : {shelfCopies[1,0]}");
+            #endregion
+
+            #region Q3
+            PrintWelcomeMessage();
             #endregion
         }
+
+        #region Q3
+        static void PrintWelcomeMessage()
+        { 
+            Console.WriteLine("Welcome to the Library!");
+        }
+        #endregion
     }
 }
