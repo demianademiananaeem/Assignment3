@@ -34,11 +34,18 @@
             #endregion
 
             #region Q6
-            double[] prices = { 25.5, 40.0 };
-            ApplyDiscount(prices);
-            Console.WriteLine($"price after : {prices[0]}");
+            //double[] prices = { 25.5, 40.0 };
+            //ApplyDiscount(prices);
+            //Console.WriteLine($"price after : {prices[0]}");
             //هنا طرح عشان array بتكون بتشاور علي مكان في ال heep
             // يعتبر بعنله مكان المتغير 
+            #endregion
+
+            #region Q7
+            int pages = 400;
+            AddBonusPagesByRef(ref pages);
+            Console.WriteLine($"page after add : {pages}");
+            // هنا التغير سمع عشان بعتله مكان المتغير 
             #endregion
         }
 
@@ -64,9 +71,16 @@
         #endregion
 
         #region Q6
-        static void ApplyDiscount(double[] prices)
+        //static void ApplyDiscount(double[] prices)
+        //{
+        //    prices[0] = prices[0] - 5;
+        //}
+        #endregion
+
+        #region Q7
+        static void AddBonusPagesByRef(ref int pages)
         {
-            prices[0] = prices[0] - 5;
+             pages = pages + 50;
         }
         #endregion
     }
