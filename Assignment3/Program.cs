@@ -67,9 +67,13 @@
             #endregion
 
             #region Q11
-            PrintBookInfo("C# Book");
-            PrintBookInfo("Java Book", 200);
-            PrintBookInfo(pages:400,title:"C++ Book");
+            //PrintBookInfo("C# Book");
+            //PrintBookInfo("Java Book", 200);
+            //PrintBookInfo(pages:400,title:"C++ Book");
+            #endregion
+
+            #region Q12
+            PrintAllTitles("C# Book", "C++ Book", "Java Book");
             #endregion
         }
 
@@ -133,9 +137,19 @@
         #endregion
 
         #region Q10
-        static void PrintBookInfo(string title, int pages = 300)
+        //static void PrintBookInfo(string title, int pages = 300)
+        //{
+        //    Console.WriteLine($"Book title: {title}, pages: {pages}");
+        //}
+        #endregion
+
+        #region Q12
+        static void PrintAllTitles(params string[] titles)
         {
-            Console.WriteLine($"Book title: {title}, pages: {pages}");
+            for (int i = 0; i < titles.Length; i++) 
+            {
+                Console.WriteLine($"{titles[i]}");
+            }
         }
         #endregion
 
